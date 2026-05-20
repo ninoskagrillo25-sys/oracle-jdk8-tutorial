@@ -70,10 +70,31 @@ public class App {
 		
 		System.out.println("El pais de todas las personas es:" + Persona.PAIS);
 		
-		
 		/* Que los enum son eminentemente estaticos, por este motivo, las constantes
 		* de un tipo enum se prefijan con el nombre del enumerable */
 		
+		System.out.println("El genero de la persona es ;" + Genero.MUJER);
+		/* Demostrando el modificador de acceso package private (privado
+		 * del paquete)*/
+		
+		Persona persona1 = new Persona();
+		System.out.println(persona1.nombre);
+		
+		/* Demostrando el modificador de acceso private*/
+       
+       /// System.out.println(persona1.primerApellido);
+       /// 
+       System.out.println(persona1.getPrimerApellido());
+       
+       //Cambiar el valor de la variable primerApellido, que es privada
+       
+       persona1.setPrimerApellido("Gomez");
+       
+       //Comprobar que el valor de la variable primerApellido se ha cambiado
+       
+       System.out.println(persona1.getPrimerApellido());
+       
+       /// 
 		 
 	
 		}
